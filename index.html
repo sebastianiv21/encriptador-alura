@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>Encriptador ALURA</title>
   </head>
   <body>
-    <div>
+    <header>
       <h1>Encriptador de Textos ALURA</h1>
+    </header>
+    <main>
       <!--Entrada de texto y botones-->
       <section id="divIn">
         <textarea
           name="entrada"
           id="entrada"
-          cols="30"
-          rows="10"
+          cols="40"
+          rows="6"
           placeholder="Ingrese el texto aqui"
-        >
-        </textarea>
+        ></textarea>
         <div>
           <p id="aclaracion">
             <img
@@ -28,38 +29,30 @@
             />
             Solo letras minúsculas y sin acentos
           </p>
-          <button class="btnOscuro">Encriptar</button>
-          <button class="btnClaro">Desencriptar</button>
+          <button class="btnOscuro" id="botonEncriptar">Encriptar</button>
+          <button class="btnClaro" id="botonDesencriptar">Desencriptar</button>
         </div>
       </section>
       <!--Mensaje descifrado-->
       <section id="divOut">
         <div id="no-message">
-          <img src="./public/no-message.svg" alt="no-message" width="300"/>
+          <img src="./public/no-message.svg" alt="no-message" width=50% />
           <h3>Ningún mensaje fue encontrado</h3>
           <p>Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
-        <textarea
-          name="display"
-          id="display"
-          cols="30"
-          rows="10"
-          disabled
-        ></textarea>
-        <button class="btnClaro">Copiar</button>
       </section>
-      <footer>
-        <p>Creado por Luis Sebastian Ibarra</p>
-        <a href="https://github.com/sebastianiv21" target="_blank"
-          ><img src="./public/github-brands.svg" alt="GitHub" width="25"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/luis-sebastian-ibarra/"
-          target="_blank"
-          ><img src="./public/linkedin-brands.svg" alt="LinkedIn" width="25"
-        /></a>
-      </footer>
-    </div>
+    </main>
+    <footer>
+      <p>Creado por Luis Sebastian Ibarra</p>
+      <a href="https://github.com/sebastianiv21" target="_blank"
+        ><img src="./public/github-brands.svg" alt="GitHub" width="25"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/luis-sebastian-ibarra/"
+        target="_blank"
+        ><img src="./public/linkedin-brands.svg" alt="LinkedIn" width="25"
+      /></a>
+    </footer>
   </body>
   <script src="./script.js"></script>
 </html>
